@@ -1,0 +1,171 @@
+[debug] [2022-02-14T04:52:22.162Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T04:52:22.163Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-02-14T04:52:22.163Z] CLI Version:   10.2.0
+[debug] [2022-02-14T04:52:22.163Z] Platform:      darwin
+[debug] [2022-02-14T04:52:22.163Z] Node Version:  v16.13.1
+[debug] [2022-02-14T04:52:22.166Z] Time:          Mon Feb 14 2022 10:22:22 GMT+0530 (India Standard Time)
+[debug] [2022-02-14T04:52:22.166Z] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  JSON error trying to load /Users/monikkacha/Developer/blockchain/web/neon-nft/.firebaserc 
+[debug] [2022-02-14T04:52:22.204Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T04:52:22.204Z] > authorizing via signed-in user (badboy7202021@gmail.com)
+[debug] [2022-02-14T04:52:22.204Z] [iam] checking project pokemon-38507 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-14T04:52:22.205Z] > refreshing access token with scopes: []
+[debug] [2022-02-14T04:52:22.205Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T04:52:22.476Z] <<< HTTP RESPONSE 200 {"date":"Mon, 14 Feb 2022 04:52:22 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T04:52:22.523Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions [none]
+[debug] [2022-02-14T04:52:22.523Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-14T04:52:24.073Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions 200
+[debug] [2022-02-14T04:52:24.074Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-14T04:52:24.075Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pokemon-38507 [none]
+[debug] [2022-02-14T04:52:24.553Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pokemon-38507 200
+[debug] [2022-02-14T04:52:24.554Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pokemon-38507 {"projectId":"pokemon-38507","projectNumber":"667612215036","displayName":"pokemon","name":"projects/pokemon-38507","resources":{"hostingSite":"pokemon-38507"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'pokemon-38507'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-14T04:52:24.559Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-14T04:52:24.559Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T04:52:24.779Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 14 Feb 2022 04:52:24 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T04:52:24.825Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pokemongame/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-14T04:52:26.764Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 14 Feb 2022 04:52:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T04:52:26.764Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-02-14T04:52:26.768Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 14 Feb 2022 04:52:26 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/pokemongame/versions",
+        "path": "/v1beta1/sites/pokemongame/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/pokemongame/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2022-02-14T04:53:02.137Z] ----------------------------------------------------------------------
+[debug] [2022-02-14T04:53:02.137Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-02-14T04:53:02.138Z] CLI Version:   10.2.0
+[debug] [2022-02-14T04:53:02.138Z] Platform:      darwin
+[debug] [2022-02-14T04:53:02.138Z] Node Version:  v16.13.1
+[debug] [2022-02-14T04:53:02.138Z] Time:          Mon Feb 14 2022 10:23:02 GMT+0530 (India Standard Time)
+[debug] [2022-02-14T04:53:02.138Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-14T04:53:02.173Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-14T04:53:02.173Z] > authorizing via signed-in user (badboy7202021@gmail.com)
+[debug] [2022-02-14T04:53:02.173Z] [iam] checking project pokemon-38507 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-14T04:53:02.174Z] > refreshing access token with scopes: []
+[debug] [2022-02-14T04:53:02.174Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T04:53:02.420Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 14 Feb 2022 04:53:02 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T04:53:02.467Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions [none]
+[debug] [2022-02-14T04:53:02.467Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-14T04:53:03.941Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions 200
+[debug] [2022-02-14T04:53:03.941Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pokemon-38507:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-14T04:53:03.943Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pokemon-38507 [none]
+[debug] [2022-02-14T04:53:04.403Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pokemon-38507 200
+[debug] [2022-02-14T04:53:04.404Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pokemon-38507 {"projectId":"pokemon-38507","projectNumber":"667612215036","displayName":"pokemon","name":"projects/pokemon-38507","resources":{"hostingSite":"pokemon-38507"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'pokemon-38507'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-14T04:53:04.409Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-14T04:53:04.409Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-14T04:53:04.635Z] <<< HTTP RESPONSE 200 {"date":"Mon, 14 Feb 2022 04:53:04 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T04:53:04.681Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pokemongame/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-14T04:53:06.540Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 14 Feb 2022 04:53:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-14T04:53:06.541Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-02-14T04:53:06.545Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Mon, 14 Feb 2022 04:53:06 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/pokemongame/versions",
+        "path": "/v1beta1/sites/pokemongame/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/pokemongame/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
